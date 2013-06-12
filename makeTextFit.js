@@ -1,10 +1,10 @@
-jQuery.fn.makeTextFit = function (max) {
+jQuery.fn.makeTextFit = function (_max) {
 
   return this.each(function () {
     
     var $self = $(this);
     var $parent = $self.parent();
-    var max = max || 72;
+    var max = _max || 72;
 
     //Set font-size to max
     $self.css("font-size", max+"px");
